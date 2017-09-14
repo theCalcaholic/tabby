@@ -4,3 +4,6 @@
 [submodule "tabby-backend"]
 	path = tabby-backend
 	url = https://github.com/theCalcaholic/tabby-backend.git
+[submodule "tabby-common"]
+	path = tabby-common
+	url = https://github.com/theCalcaholic/tabby-common.git
