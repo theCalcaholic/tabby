@@ -1,0 +1,3 @@
+[submodule "tabby-frontend"]
+	path = tabby-frontend
+	url = https://github.com/theCalcaholic/tabby-frontend.git
