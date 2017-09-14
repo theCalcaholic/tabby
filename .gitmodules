@@ -3,4 +3,4 @@
 	url = https://github.com/theCalcaholic/tabby-frontend.git
 [submodule "tabby-backend"]
 	path = tabby-backend
-	url = ./tabby-backend
+	url = https://github.com/theCalcaholic/tabby-backend.git
