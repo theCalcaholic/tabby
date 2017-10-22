@@ -1,4 +1,12 @@
+#!/bin/bash
+cd "${0%/*}"
+
 sudo su www-data -s /bin/sh -c "git pull"
+
+echo Update tabby-common
+cd ./tabby-common
+./upgrade_and_build.sh
+echo done.
 
 echo Update tabby-backend...
 cd ./tabby-backend
