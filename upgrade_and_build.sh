@@ -1,15 +1,10 @@
 #!/bin/bash
 cd "${0%/*}"
 
-sudo su www-data -s /bin/sh -c "git pull --recurse-submodules=yes"
-
-echo Update tabby-common
-cd ./tabby-common
-./build.sh
-echo done.
+sudo -u www-data git pull --recurse-submodules=yes
 
 echo Update tabby-backend...
-cd ../tabby-backend
+cd ./tabby-backend
 ./build.sh
 echo done.
 
