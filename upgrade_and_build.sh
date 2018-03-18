@@ -1,20 +1,20 @@
 #!/bin/bash
 cd "${0%/*}"
 
-sudo su www-data -s /bin/sh -c "git pull"
+sudo su www-data -s /bin/sh -c "git pull --recurse-submodules=yes"
 
 echo Update tabby-common
 cd ./tabby-common
-./upgrade_and_build.sh
+./build.sh
 echo done.
 
 echo Update tabby-backend...
-cd ./tabby-backend
-./upgrade_and_build.sh
+cd ../tabby-backend
+./build.sh
 echo done.
 
 echo Update tabby-frontend...
 cd ../tabby-frontend
-./upgrade_and_build.sh
+./build.sh
 echo done.
 echo Update complete.
